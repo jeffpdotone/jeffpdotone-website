@@ -55,7 +55,7 @@ watch(aptBtn, (val) => {
   ;(window as any).calendar.schedulingButton.load({
         url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fTgx1xv16Ep1VbVHEcMi1Rf8RKbfw2SqScrKY_uUgv8SB7ZKXouvIvIu-0GMmf2V6NL-JTDcn?gv=true',
         color: '#039BE5',
-        label: 'Hire or Say Hi to Jefferson Paltera',
+        label: 'Hire or Say Hi!',
         target: val,
     })
 })
