@@ -10,6 +10,7 @@
 
 <script setup lang="ts">
 useHead({
+  title: 'Jefferson Paltera | Web Developer',
   link: [
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
