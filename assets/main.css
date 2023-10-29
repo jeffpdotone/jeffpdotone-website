@@ -1,0 +1,21 @@
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+
+  * {
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+
+  h1, h2 {
+    @apply text-5xl;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 0.2rem;
+  }
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
