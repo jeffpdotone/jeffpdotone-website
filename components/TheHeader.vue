@@ -18,6 +18,13 @@
                     >(+63) 917-117-8024</a
                 >
             </div>
+            <div class="flex gap-2">
+                <box-icon name="github" type="logo"></box-icon>
+                <a href="https://github.com/jeffpdotone" class="hover:underline"
+                    >https://github.com/jeffpdotone</a
+                >
+            </div>
+            
             <div class="print:hidden">
                 <ClientOnly>
                     <div ref="aptBtn"></div>

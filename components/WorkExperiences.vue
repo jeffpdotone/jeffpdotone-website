@@ -29,9 +29,9 @@
                         :href="refer.link"
                         target="_blank"
                         rel="noopener noreferrer"
-                        class="hover:underline"
+                        class="hover:underline flex gap-2"
                     >
-                        {{ refer.name }}
+                        <span>{{ refer.name }}</span> <span class="hidden print:block">{{ refer.link }}</span>
                     </a>
                 </div>
             </template>
