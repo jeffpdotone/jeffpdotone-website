@@ -12,7 +12,16 @@ export default defineNuxtConfig({
     options: {
       unstyled: true,
     },
-    importPT: { as: 'Tailwind', from: 'primevue/passthrough/tailwind' }
+    importPT: { as: 'Tailwind', from: 'primevue/passthrough/tailwind' },
+    components: {
+      include: ['Card', 'Rating']
+    },
+    directives: {
+      include: []
+    },
+    composables: {
+      include: []
+    }
   },
   postcss: {
     plugins: {
