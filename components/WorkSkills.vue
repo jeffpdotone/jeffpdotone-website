@@ -19,6 +19,8 @@ const techStacks = ref([
     { value: 4, name: 'Node.JS' },
     { value: 3, name: 'Python' },
     { value: 3, name: 'PHP' },
+    { value: 3, name: 'Laravel' },
+    { value: 3, name: 'GraphQL' },
     { value: 4, name: 'Vue/Nuxt.js 2&3' },
     { value: 4, name: 'React/Next.js' },
     { value: 4, name: 'Tailwind/UnoCSS' },
