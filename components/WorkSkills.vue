@@ -1,12 +1,11 @@
 <template>
-    <div class="flex gap-2 flex-wrap justify-center">
-        <div
-            v-for="tech of techStacks"
-            :key="tech.name"
-            class="flex flex-col items-center border p-5 rounded-xl w-[170px] text-center"
-        >
-            <Rating v-model="tech.value" readonly :cancel="false" />
-            {{ tech.name }}
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 flex-wrap justify-center work-skills">
+        <div v-for="tech of techStacks" :key="tech.name"
+            class="flex flex-col items-center border p-5 rounded-xl text-center text-xs md:text-base">
+            <Rating v-model="tech.value" readonly :pt-options="{ mergeProps: true }"
+                :pt="pt"
+                :cancel="false" />
+            <span>{{ tech.name }}</span>
         </div>
     </div>
 </template>
@@ -26,4 +25,6 @@ const techStacks = ref([
     { value: 4, name: 'Tailwind/UnoCSS' },
     { value: 4, name: 'DevOps (AWS, Azure, GCP)' },
 ])
+
+const pt = { onIcon: { class: 'w-[10px] md:w-[25px]' }, offIcon: { class: 'w-[10px] md:w-[25px]' } }
 </script>

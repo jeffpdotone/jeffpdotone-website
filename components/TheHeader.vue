@@ -1,6 +1,6 @@
 <template>
-    <div class="flex justify-between items-center">
-        <div class="leading-none">
+    <div class="flex justify-between items-center flex-wrap gap-5">
+        <div class="leading-none flex-1 md:w-1/2">
             <h1>Jefferson Paltera</h1>
             <h3>Web DEVeloper</h3>
         </div>
@@ -20,7 +20,7 @@
             </div>
             <div class="flex gap-2">
                 <box-icon name="github" type="logo"></box-icon>
-                <a href="https://github.com/jeffpdotone" class="hover:underline"
+                <a href="https://github.com/jeffpdotone" class="hover:underline" style="overflow-wrap: anywhere;"
                     >https://github.com/jeffpdotone</a
                 >
             </div>
@@ -32,7 +32,7 @@
             </div>
             <div class="hidden gap-2 print:flex">
                 <box-icon name="globe"></box-icon>
-                <a href="https://jeffp.one">jeffp.one</a>
+                <a href="https://jeffp.one" >jeffp.one</a>
             </div>
         </div>
     </div>

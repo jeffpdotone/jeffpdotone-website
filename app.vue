@@ -1,5 +1,5 @@
 <template>
-  <div class="w-4/6 mx-auto my-12 print:w-screen flex flex-col gap-10 print:gap-5">
+  <div class=" w-5/6 md:w-4/6 mx-auto my-12 print:w-screen flex flex-col gap-10 print:gap-5">
     <the-header />
 
     <work-skills />

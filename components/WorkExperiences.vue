@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-5 flex-col">
+    <div class="flex gap-5 flex-col text-xs md:text-base">
         <Card v-for="item of events" :key="item.companyName">
             <template #title>
                 <img
@@ -41,6 +41,17 @@
 
 <script setup>
 import { ref } from 'vue'
+
+const freelancePoints = [
+"11+ years in software development (since 2012).",
+  "Web developer with expertise in VueJS, ReactJS, Nuxt.js 2, Nuxt.js 3, Next.js, and ag-Grid.",
+  "Proficiency in network protocols, JavaScript, SQL databases, and Firebase.",
+  "Experienced with cloud platforms (AWS, Google Cloud, Alibaba Cloud).",
+  "Mobile app development using Flutter, React Native, and Ionic.",
+  "Extensive experience in PHP, Node.js, Python, Laravel, and WordPress development.",
+  "Specialized in SEO optimization with WordPress.",
+  "Proficient in setting up Linux servers and web servers."
+];
 
 const vsfPoints = [
     'Extensive experience in designing and maintaining headless e-commerce websites using Vue Storefront.',
@@ -91,6 +102,15 @@ const mobileadsReference = [
 ]
 
 const events = ref([
+{
+        companyName: 'Freelancer',
+        jobTitle: 'Full Stack Engineer',
+        alt: 'JeffP.one Logo',
+        image: 'https://avatars.githubusercontent.com/u/15663986?v=4',
+        date: 'Active Since 2012 (11 years)',
+        color: 'gray',
+        points: freelancePoints,
+    },
     {
         companyName: 'Vue Storefront',
         jobTitle: 'Frontend Engineer',
@@ -106,7 +126,7 @@ const events = ref([
         jobTitle: 'Senior Software Engineer',
         alt: 'Switch Automation Logo',
         image: '/switch.svg',
-        date: 'Sept 2018 - Oct 2021 (3 years 1 month)',
+        date: 'Sept 2018 -  (1 year as Upwork Talent) (4 years 1 month as Regular Employee)',
         color: '#c0d736',
         points: switchPoints,
         refs: switchReference,
