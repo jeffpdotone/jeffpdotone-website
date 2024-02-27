@@ -12,12 +12,12 @@
                     >hi@jeffp.one</a
                 >
             </div>
-            <div class="flex gap-2">
+            <!-- <div class="flex gap-2">
                 <box-icon name="phone"></box-icon>
                 <a href="tel:+639171178024" class="hover:underline"
                     >(+63) 917-117-8024</a
                 >
-            </div>
+            </div> -->
             <div class="flex gap-2">
                 <box-icon name="github" type="logo"></box-icon>
                 <a href="https://github.com/jeffpdotone" class="hover:underline" style="overflow-wrap: anywhere;"

@@ -2,12 +2,7 @@
     <div class="flex gap-5 flex-col text-xs md:text-base">
         <Card v-for="item of events" :key="item.companyName">
             <template #title>
-                <img
-                    v-if="item.image"
-                    :src="item.image"
-                    class="h-10"
-                    :alt="item.alt"
-                />
+                <img v-if="item.image" :src="item.image" class="h-10" :alt="item.alt" />
                 {{ item.companyName }}
                 - {{ item.jobTitle }}
             </template>
@@ -23,14 +18,8 @@
 
                 <div v-if="item.refs" class="flex gap-2 mt-5">
                     <span>References:</span>
-                    <a
-                        v-for="refer in item.refs"
-                        :key="refer.name"
-                        :href="refer.link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="hover:underline flex gap-2"
-                    >
+                    <a v-for="refer in item.refs" :key="refer.name" :href="refer.link" target="_blank"
+                        rel="noopener noreferrer" class="hover:underline flex gap-2">
                         <span>{{ refer.name }}</span> <span class="hidden print:block">{{ refer.link }}</span>
                     </a>
                 </div>
@@ -43,14 +32,14 @@
 import { ref } from 'vue'
 
 const freelancePoints = [
-"11+ years in software development (since 2012).",
-  "Web developer with expertise in VueJS, ReactJS, Nuxt.js 2, Nuxt.js 3, Next.js, and ag-Grid.",
-  "Proficiency in network protocols, JavaScript, SQL databases, and Firebase.",
-  "Experienced with cloud platforms (AWS, Google Cloud, Alibaba Cloud).",
-  "Mobile app development using Flutter, React Native, and Ionic.",
-  "Extensive experience in PHP, Node.js, Python, Laravel, and WordPress development.",
-  "Specialized in SEO optimization with WordPress.",
-  "Proficient in setting up Linux servers and web servers."
+    "11+ years in software development (since 2012).",
+    "Web developer with expertise in VueJS, ReactJS, Nuxt.js 2, Nuxt.js 3, Next.js, and ag-Grid.",
+    "Proficiency in network protocols, JavaScript, SQL databases, and Firebase.",
+    "Experienced with cloud platforms (AWS, Google Cloud, Alibaba Cloud).",
+    "Mobile app development using Flutter, React Native, and Ionic.",
+    "Extensive experience in PHP, Node.js, Python, Laravel, and WordPress development.",
+    "Specialized in SEO optimization with WordPress.",
+    "Proficient in setting up Linux servers and web servers."
 ];
 
 const vsfPoints = [
@@ -102,25 +91,15 @@ const mobileadsReference = [
 ]
 
 const events = ref([
-// {
-//         companyName: 'Freelancer',
-//         jobTitle: 'Full Stack Engineer',
-//         alt: 'JeffP.one Logo',
-//         image: 'https://avatars.githubusercontent.com/u/15663986?v=4',
-//         date: 'Active Since 2012 (11 years)',
-//         color: 'gray',
-//         points: freelancePoints,
-//     },
-    // {
-    //     companyName: 'Vue Storefront',
-    //     jobTitle: 'Frontend Engineer',
-    //     alt: 'Vue Storefront Logo',
-    //     image: '/vsf.svg',
-    //     date: 'Oct 2021 - Oct 2023 (2 years)',
-    //     color: '#02c652',
-    //     points: vsfPoints,
-    //     refs: vsfReference,
-    // },
+    {
+        companyName: 'Freelancer',
+        jobTitle: 'Full Stack Engineer',
+        alt: 'JeffP.one Logo',
+        image: 'https://avatars.githubusercontent.com/u/15663986?v=4',
+        date: 'Active Since 2012 (11 years)',
+        color: 'gray',
+        points: freelancePoints,
+    },
     {
         companyName: 'Switch Automation',
         jobTitle: 'Senior Software Engineer',
@@ -130,6 +109,16 @@ const events = ref([
         color: '#c0d736',
         points: switchPoints,
         refs: switchReference,
+    },
+    {
+        companyName: 'Vue Storefront',
+        jobTitle: 'Frontend Engineer',
+        alt: 'Vue Storefront Logo',
+        image: '/vsf.svg',
+        date: 'Oct 2021 - Oct 2023 (2 years)',
+        color: '#02c652',
+        points: vsfPoints,
+        refs: vsfReference,
     },
     {
         companyName: 'MobileAds',
