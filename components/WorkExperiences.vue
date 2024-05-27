@@ -39,7 +39,9 @@ const freelancePoints = [
     "Mobile app development using Flutter, React Native, and Ionic.",
     "Extensive experience in PHP, Node.js, Python, Laravel, and WordPress development.",
     "Specialized in SEO optimization with WordPress.",
-    "Proficient in setting up Linux servers and web servers."
+    "Proficient in setting up Linux servers and web servers.",
+    "Extensive experience in designing and maintaining headless e-commerce websites using Vue",
+    "Expertise in integrating Vue headless with Shopify and BigCommerce to deliver comprehensive solutions with seamless functionality and optimal performance."
 ];
 
 const vsfPoints = [
