@@ -7,12 +7,12 @@ export default {
     "./plugins/**/*.{js,ts}",
     "./app.vue",
     "./error.vue",
-    "./node_modules/primevue/**/*.{vue,js,ts,jsx,tsx}"
+    "./presets/**/*.{js,vue,ts}",
   ],
   darkMode: 'class',
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('tailwindcss-primeui')],
 }
 

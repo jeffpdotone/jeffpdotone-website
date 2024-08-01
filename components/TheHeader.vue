@@ -8,9 +8,7 @@
         <div class="flex flex-col gap-3">
             <div class="flex gap-2">
                 <box-icon name="envelope"></box-icon>
-                <a href="mailto:hi@jeffp.one" class="hover:underline"
-                    >hi@jeffp.one</a
-                >
+                <a href="mailto:hi@jeffp.one" class="hover:underline">hi@jeffp.one</a>
             </div>
             <!-- <div class="flex gap-2">
                 <box-icon name="phone"></box-icon>
@@ -20,11 +18,10 @@
             </div> -->
             <div class="flex gap-2">
                 <box-icon name="github" type="logo"></box-icon>
-                <a href="https://github.com/jeffpdotone" class="hover:underline" style="overflow-wrap: anywhere;"
-                    >https://github.com/jeffpdotone</a
-                >
+                <a href="https://github.com/jeffpdotone" class="hover:underline"
+                    style="overflow-wrap: anywhere;">https://github.com/jeffpdotone</a>
             </div>
-            
+
             <div class="print:hidden">
                 <ClientOnly>
                     <div ref="aptBtn"></div>
@@ -32,7 +29,7 @@
             </div>
             <div class="hidden gap-2 print:flex">
                 <box-icon name="globe"></box-icon>
-                <a href="https://jeffp.one" >jeffp.one</a>
+                <a href="https://jeffp.one">jeffp.one</a>
             </div>
         </div>
     </div>
@@ -52,18 +49,24 @@ useHead({
         {
             src: 'https://calendar.google.com/calendar/scheduling-button-script.js',
             async: true,
+            onload: () => {
+                
+                const unwatch = watch(aptBtn, (val) => {
+                    window.calendar.schedulingButton.load({
+                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fTgx1xv16Ep1VbVHEcMi1Rf8RKbfw2SqScrKY_uUgv8SB7ZKXouvIvIu-0GMmf2V6NL-JTDcn?gv=true',
+                        color: '#039BE5',
+                        label: 'Hire or Say Hi!',
+                        target: val,
+                    })
+
+                    nextTick(() => {
+                        unwatch()
+                    })
+                }, { immediate: true })
+            },
         },
     ],
 })
 
-watch(aptBtn, (val) => {
-  console.log(val)
 
-  ;(window as any).calendar.schedulingButton.load({
-        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fTgx1xv16Ep1VbVHEcMi1Rf8RKbfw2SqScrKY_uUgv8SB7ZKXouvIvIu-0GMmf2V6NL-JTDcn?gv=true',
-        color: '#039BE5',
-        label: 'Hire or Say Hi!',
-        target: val,
-    })
-})
 </script>

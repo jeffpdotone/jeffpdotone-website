@@ -6,6 +6,8 @@
     "Koay",
     "mobileads",
     "Paltera",
+    "primevue",
     "Rakowski"
-  ]
+  ],
+  "eslint.useFlatConfig": true
 }

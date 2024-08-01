@@ -1,6 +1,9 @@
+import path from 'path'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['nuxt-primevue'],
+  compatibilityDate: '2024-04-03',
+  modules: ['@primevue/nuxt-module', '@nuxt/eslint'],
   devtools: { enabled: true },
   css: ['~/assets/main.css'],
   vue: {
@@ -12,7 +15,7 @@ export default defineNuxtConfig({
     options: {
       unstyled: true,
     },
-    importPT: { as: 'Tailwind', from: 'primevue/passthrough/tailwind' },
+    importPT: { from: path.resolve(__dirname, './presets/aura') },
     components: {
       include: ['Card', 'Rating']
     },
@@ -21,6 +24,11 @@ export default defineNuxtConfig({
     },
     composables: {
       include: []
+    }
+  },
+  eslint: {
+    config: {
+      stylistic: true
     }
   },
   postcss: {

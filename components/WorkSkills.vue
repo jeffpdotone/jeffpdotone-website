@@ -13,6 +13,7 @@
 <script setup>
 const techStacks = ref([
     { value: 5, name: 'HTML/HTML5' },
+    { value: 3, name: 'Liquid Markup' },
     { value: 5, name: 'JS/TYPESCRIPT' },
     { value: 5, name: 'CSS/SCSS' },
     { value: 4, name: 'Node.JS' },
@@ -21,6 +22,7 @@ const techStacks = ref([
     { value: 3, name: 'Laravel' },
     { value: 3, name: 'GraphQL' },
     { value: 4, name: 'Vue/Nuxt.js 2&3' },
+    { value: 3, name: 'web3' },
     { value: 4, name: 'React/Next.js' },
     { value: 4, name: 'Tailwind/UnoCSS' },
     { value: 4, name: 'DevOps (AWS, Azure, GCP)' },

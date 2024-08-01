@@ -32,25 +32,28 @@
 import { ref } from 'vue'
 
 const freelancePoints = [
-    "11+ years in software development (since 2012).",
+    "11+ years in software development (since 2012), continuously updating skills and knowledge.",
     "Web developer with expertise in VueJS, ReactJS, Nuxt.js 2, Nuxt.js 3, Next.js, and ag-Grid.",
+    "Extensive experience in designing and maintaining headless e-commerce websites using Vue and Vue Storefront.",
+    "Expertise in integrating Vue and Vue Storefront with Shopify and BigCommerce to deliver comprehensive solutions with seamless functionality and optimal performance.",
+    "Proficient in Liquid markup for Shopify.",
     "Proficiency in network protocols, JavaScript, SQL databases, and Firebase.",
     "Experienced with cloud platforms (AWS, Google Cloud, Alibaba Cloud).",
     "Mobile app development using Flutter, React Native, and Ionic.",
-    "Extensive experience in PHP, Node.js, Python, Laravel, and WordPress development.",
-    "Specialized in SEO optimization with WordPress.",
+    "Extensive experience in PHP, Node.js, Python, Laravel, and WordPress development, with specialization in SEO optimization with WordPress.",
     "Proficient in setting up Linux servers and web servers.",
-    "Extensive experience in designing and maintaining headless e-commerce websites using Vue",
-    "Expertise in integrating Vue headless with Shopify and BigCommerce to deliver comprehensive solutions with seamless functionality and optimal performance."
+    "Proven ability to collaborate effectively with cross-functional teams and a commitment to delivering high-quality results.",
+    "Expertise in debugging and troubleshooting issues with Vue, Vue Storefront, Shopify, and BigCommerce, ensuring a smooth user experience for customers.",
+    "Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms."
 ];
 
-const vsfPoints = [
-    'Extensive experience in designing and maintaining headless e-commerce websites using Vue Storefront.',
-    'Expertise in integrating Vue Storefront with Shopify and BigCommerce to deliver comprehensive solutions with seamless functionality and optimal performance.',
-    'Proven ability to collaborate effectively with cross-functional teams and a commitment to delivering high-quality results.',
-    'Expertise in debugging and troubleshooting issues with Vue Storefront, Shopify, and BigCommerce, ensuring a smooth user experience for customers.',
-    'Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms.',
-]
+// const vsfPoints = [
+//     'Extensive experience in designing and maintaining headless e-commerce websites using Vue Storefront.',
+//     'Expertise in integrating Vue Storefront with Shopify and BigCommerce to deliver comprehensive solutions with seamless functionality and optimal performance.',
+//     'Proven ability to collaborate effectively with cross-functional teams and a commitment to delivering high-quality results.',
+//     'Expertise in debugging and troubleshooting issues with Vue Storefront, Shopify, and BigCommerce, ensuring a smooth user experience for customers.',
+//     'Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms.',
+// ]
 
 const switchPoints = [
     'Develop and maintain a bug-free web application.',
