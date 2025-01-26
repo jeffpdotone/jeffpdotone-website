@@ -2,7 +2,7 @@
   <div>
     <div class="flex flex-col items-center justify-center h-screen">
       <div
-        v-if="!ended"
+        v-if="!ended && !feel"
         class="cursor-pointer"
         @click="openLetter"
       >
@@ -14,6 +14,27 @@
       </div>
 
       <ThanksHeart v-if="ended" />
+
+      <audio
+        v-if="feel"
+        controls
+        @play="onPlay"
+        @pause="onPause"
+        @ended="onEnded"
+      >
+        <source
+          src="/secret-message-1.mp3"
+          type="audio/mpeg"
+        >
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div
+      class="re"
+      @click="whatIFeel"
+    >
+      What I Feel
     </div>
   </div>
 </template>
@@ -28,6 +49,8 @@ const docRef = doc(db, 'answers', 'rYLxSZ585PJFmZgGW0rf')
 
 const ended = ref(false)
 
+const feel = ref(false)
+
 useHead({
   title: 'Aya\'s Secret Message',
   bodyAttrs: {
@@ -37,6 +60,87 @@ useHead({
     { src: 'https://cdn.jsdelivr.net/npm/sweetalert2@11' },
   ],
 })
+
+async function onPlay() {
+  const doc = await getDoc(docRef)
+
+  const docData = doc.data()
+
+  updateDoc(docRef, {
+    PLAYED: (docData.PLAYED || 0) + 1,
+  })
+}
+async function onPause() {
+  const doc = await getDoc(docRef)
+
+  const docData = doc.data()
+
+  updateDoc(docRef, {
+    PAUSED: (docData.PAUSED || 0) + 1,
+  })
+}
+async function onEnded() {
+  const doc = await getDoc(docRef)
+
+  const docData = doc.data()
+
+  updateDoc(docRef, {
+    ENDED: (docData.ENDED || 0) + 1,
+  })
+}
+
+function dontListenToIt() {
+  Swal.fire({
+    title: 'Please don\'t listen to it',
+    text: 'If you\'re not ready to see the vulnerable part of me, please dont listen to it. I dont want to make you feel uncomfortable.',
+    icon: 'info',
+    confirmButtonText: 'I UNDERSTAND',
+    cancelButtonText: 'STOP',
+    allowOutsideClick: false,
+  })
+    .then(async (result) => {
+      if (result.isConfirmed) {
+        feel.value = true
+        const doc = await getDoc(docRef)
+
+        const docData = doc.data()
+
+        updateDoc(docRef, {
+          YES_CONT: (docData.YES_CONT || 0) + 1,
+        })
+      }
+      else {
+        const doc = await getDoc(docRef)
+
+        const docData = doc.data()
+
+        updateDoc(docRef, {
+          NO_CONT: (docData.NO_CONT || 0) + 1,
+        })
+      }
+    })
+}
+
+async function whatIFeel() {
+  const doc = await getDoc(docRef)
+
+  const docData = doc.data()
+
+  updateDoc(docRef, {
+    FEEL: (docData.FEEL || 0) + 1,
+  })
+
+  Swal.fire({
+    title: 'What I Feel',
+    text: 'I feel so lucky to have you in my life. You are amazing! Careful the next thing you will see a voice record of me being honest to you. You don\'t need to answer it. Disclaimer this recording is what I feel and I am probably expecting anything in return but... I just want to let you know.',
+    icon: 'info',
+    confirmButtonText: 'Next',
+    allowOutsideClick: false,
+  })
+    .then(() => {
+      dontListenToIt()
+    })
+}
 
 async function openLetter() {
   const doc = await getDoc(docRef)
@@ -164,6 +268,16 @@ async function canIBeYourValentine() {
 </script>
 
 <style scoped>
+.re {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 0.5em;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
 .ml6 {
     position: relative;
     font-weight: 900;
