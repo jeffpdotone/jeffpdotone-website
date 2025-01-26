@@ -96,6 +96,7 @@ function dontListenToIt() {
     icon: 'info',
     confirmButtonText: 'I UNDERSTAND',
     cancelButtonText: 'STOP',
+    showCancelButton: true,
     allowOutsideClick: false,
   })
     .then(async (result) => {
