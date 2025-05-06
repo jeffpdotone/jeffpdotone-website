@@ -47,13 +47,13 @@ const freelancePoints = [
     "Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms."
 ];
 
-// const vsfPoints = [
-//     'Extensive experience in designing and maintaining headless e-commerce websites using Vue Storefront.',
-//     'Expertise in integrating Vue Storefront with Shopify and BigCommerce to deliver comprehensive solutions with seamless functionality and optimal performance.',
-//     'Proven ability to collaborate effectively with cross-functional teams and a commitment to delivering high-quality results.',
-//     'Expertise in debugging and troubleshooting issues with Vue Storefront, Shopify, and BigCommerce, ensuring a smooth user experience for customers.',
-//     'Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms.',
-// ]
+const vsfPoints = [
+    'Extensive experience in designing and maintaining headless e-commerce websites using Vue Storefront.',
+    'Expertise in integrating Vue Storefront with Shopify and BigCommerce to deliver comprehensive solutions with seamless functionality and optimal performance.',
+    'Proven ability to collaborate effectively with cross-functional teams and a commitment to delivering high-quality results.',
+    'Expertise in debugging and troubleshooting issues with Vue Storefront, Shopify, and BigCommerce, ensuring a smooth user experience for customers.',
+    'Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms.',
+]
 
 const switchPoints = [
     'Develop and maintain a bug-free web application.',
@@ -115,16 +115,16 @@ const events = ref([
         points: switchPoints,
         refs: switchReference,
     },
-    // {
-    //     companyName: 'Vue Storefront',
-    //     jobTitle: 'Frontend Engineer',
-    //     alt: 'Vue Storefront Logo',
-    //     image: '/vsf.svg',
-    //     date: 'Oct 2021 - Oct 2023 (2 years)',
-    //     color: '#02c652',
-    //     points: vsfPoints,
-    //     refs: vsfReference,
-    // },
+    {
+        companyName: 'Vue Storefront',
+        jobTitle: 'Freelance Frontend Engineer',
+        alt: 'Vue Storefront Logo',
+        image: '/vsf.svg',
+        date: 'Oct 2021 - Oct 2023 (2 years)',
+        color: '#02c652',
+        points: vsfPoints,
+        refs: vsfReference,
+    },
     {
         companyName: 'MobileAds',
         jobTitle: 'Mid Frontend Engineer',
