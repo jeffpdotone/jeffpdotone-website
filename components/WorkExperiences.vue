@@ -44,7 +44,9 @@ const freelancePoints = [
     "Proficient in setting up Linux servers and web servers.",
     "Proven ability to collaborate effectively with cross-functional teams and a commitment to delivering high-quality results.",
     "Expertise in debugging and troubleshooting issues with Vue, Vue Storefront, Shopify, and BigCommerce, ensuring a smooth user experience for customers.",
-    "Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms."
+    "Continuous commitment to staying up-to-date with the latest advancements in these ecosystems, enabling the provision of innovative solutions that drive the adoption of these platforms.",
+    "Experience in Solana NFT projects, including setting up minting sites and preparing NFTs for minting using HashLips and Candy Machine (v1/v2).",
+    "Developed a Solana NFT minting site using Vue.js 3 with web3 interaction, integrating Phantom and Solflare wallets."
 ];
 
 const vsfPoints = [
