@@ -68,7 +68,7 @@ onMounted(() => {
 
 const freelancePoints = [
   () => `Over ${yearsExp.value} years of experience in full-stack web and mobile development.`,
-  'Contributed to Vue Storefront (now Alokai) as part of ongoing freelance work in the headless e-commerce space.',
+  // 'Contributed to Vue Storefront (now Alokai) as part of ongoing freelance work in the headless e-commerce space.',
   'Skilled in building modern, high-performance websites using VueJS, Nuxt.js, ReactJS, Next.js, and ag-Grid.',
   'Experienced in integrating with Shopify and BigCommerce to create seamless and scalable e-commerce solutions.',
   'Proficient in Liquid for Shopify theme customization and backend functionality.',
