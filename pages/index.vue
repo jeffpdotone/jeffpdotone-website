@@ -1,16 +1,26 @@
 <template>
-  <div class=" w-5/6 md:w-4/6 mx-auto my-12 print:w-screen flex flex-col gap-10 print:gap-5">
+  <main class="w-5/6 md:w-4/6 mx-auto my-12 print:w-screen flex flex-col gap-10 print:gap-5">
     <the-header />
 
-    <work-skills />
+    <section class="max-w-3xl text-sm md:text-base leading-relaxed text-gray-700 dark:text-gray-300">
+      <p>
+        Versatile software engineer building digital products since 2012, across smart-building
+        platforms, e-commerce and NetSuite integrations, SaaS, mobile applications, interactive
+        games, and rich-media advertising. After eight years at Switch Automation, I bring deep
+        expertise in building IoT, MQTT, real-time connected-system data, front-end architecture,
+        and reliable enterprise web applications.
+      </p>
+    </section>
 
     <work-experiences />
-  </div>
+
+    <work-skills />
+  </main>
 </template>
 
 <script setup lang="ts">
 useHead({
-  title: 'Jefferson Paltera | Web Developer',
+  title: 'Jefferson Paltera | E-commerce, NetSuite & Smart Building Engineer',
   link: [
     { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
     { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },

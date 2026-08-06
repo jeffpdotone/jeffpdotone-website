@@ -2,7 +2,7 @@
   <div class="flex justify-between items-center flex-wrap gap-5">
     <div class="leading-none flex-1 md:w-1/2">
       <h1>Jefferson Paltera</h1>
-      <h3>Web DEVeloper</h3>
+      <h3>E-commerce, NetSuite &amp; Smart Building Engineer</h3>
     </div>
 
     <div class="flex flex-col gap-3">

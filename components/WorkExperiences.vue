@@ -67,17 +67,12 @@ onMounted(() => {
 })
 
 const freelancePoints = [
-  () => `Over ${yearsExp.value} years of experience in full-stack web and mobile development.`,
-  // 'Contributed to Vue Storefront (now Alokai) as part of ongoing freelance work in the headless e-commerce space.',
-  'Skilled in building modern, high-performance websites using VueJS, Nuxt.js, ReactJS, Next.js, and ag-Grid.',
-  'Experienced in integrating with Shopify and BigCommerce to create seamless and scalable e-commerce solutions.',
-  'Proficient in Liquid for Shopify theme customization and backend functionality.',
-  'Strong knowledge of JavaScript, SQL, Firebase, and network protocols.',
-  'Developed cross-platform mobile apps using Flutter, React Native, and Ionic.',
-  'Backend expertise with Node.js, PHP, Python, Laravel, and WordPress, with a focus on SEO and content optimization.',
-  'Experienced in managing Linux servers and deploying applications on AWS, Google Cloud, and Alibaba Cloud.',
-  'Worked on Solana NFT projects involving minting sites, wallet integrations, and smart contract interactions using tools like HashLips and Candy Machine.',
-  'Committed to open-source collaboration, clean coding practices, and delivering reliable, future-ready digital solutions.',
+  'Own customer-facing e-commerce projects from architecture through deployment and ongoing support.',
+  'Deliver headless commerce implementations for Shopify and BigCommerce, including custom storefront and backend integrations.',
+  'Connect e-commerce storefronts with NetSuite and other business systems.',
+  'Develop cross-platform mobile applications with Flutter, React Native, and Ionic.',
+  'Own cloud deployments and Linux infrastructure across AWS, Google Cloud, and Alibaba Cloud.',
+  'Built Solana NFT minting experiences, including wallet integrations and smart-contract interactions.',
 ]
 
 // const vsfPoints = [
@@ -89,25 +84,26 @@ const freelancePoints = [
 // ]
 
 const switchPoints = [
-  'Develop and maintain a bug-free web application.',
-  'Implement new Nuxt.js framework to improve the company\'s front-end.',
-  'Incorporate new technology trends to enhance the company\'s product.',
-  'Automate development and testing processes.',
-  'Introduce and train the team on the Vue.js framework.',
+  'Led the front-end modernization of an enterprise smart-building platform by introducing Nuxt.js and Vue.js.',
+  'Built MQTT integrations that delivered real-time data from connected building systems to the web application.',
+  'Developed interfaces that made complex building, equipment, and operational data usable for facility teams.',
+  'Trained teammates on Vue.js patterns so the team could confidently build and maintain the new front end.',
+  'Owned development and maintenance of production web application features, including debugging and reliability work.',
+  'Automated development and testing workflows to make releases more consistent and repeatable.',
 ]
 
 const mobileadsPoints = [
-  'I specialize in crafting customized HTML5 ads that engage and captivate the audience.',
-  'My role involves creating rich media ads that incorporate interactive elements, animations, and multimedia content to deliver compelling advertising experiences.',
-  'I work closely with clients to understand their unique brand and campaign goals, tailoring each ad to their specific needs.',
-  'I utilize vanilla JavaScript to ensure browser compatibility across different devices, enhancing the reach of our ads.',
-  'My responsibilities include optimizing ad performance and ensuring seamless integration across various advertising platforms and devices.',
+  'Built custom HTML5 rich-media ads for major brands, including Rexona and BPI, handling millions of impressions and tracked interaction and click events.',
+  'Created interactive mobile ad experiences using device capabilities such as gyroscope input, shake detection, camera access, and QR-code scanning.',
+  'Worked directly with clients to translate brand and campaign goals into production-ready ad experiences.',
+  'Used vanilla JavaScript to support a wide range of browsers, devices, and advertising platforms.',
+  'Owned performance optimization and cross-platform integration for delivered campaigns.',
 ]
 
 const coconetPoints = [
-  'As a software developer, I play a crucial role in the development of important business solutions for small and medium-sized enterprises in the Philippines.',
-  'My expertise is utilized in the creation of three essential products: a cable billing management system, a payroll management system, and a law office management system.',
-  'These desktop applications are specifically designed to meet the unique needs of SMBs and help streamline their operations.',
+  'Built desktop business software for small and medium-sized companies in the Philippines.',
+  'Developed three operational products: cable billing, payroll management, and law-office management systems.',
+  'Translated the day-to-day workflows of local businesses into software that streamlined their operations.',
 ]
 
 const vsfReference = [
@@ -131,7 +127,7 @@ const mobileadsReference = [
 const events = ref([
   {
     companyName: 'Freelancer',
-    jobTitle: 'Full Stack Engineer',
+    jobTitle: 'Independent E-commerce, NetSuite & Smart Building Engineer',
     alt: 'JeffP.one Logo',
     image: 'https://avatars.githubusercontent.com/u/15663986?v=4',
     date: () => `Active Since 2012 (${yearsExp.value} years)`,
@@ -144,7 +140,7 @@ const events = ref([
     jobTitle: 'Senior Software Engineer',
     alt: 'Switch Automation Logo',
     image: '/switch.svg',
-    date: 'Sept 2018 - Present (1 year as Upwork Talent)',
+    date: 'Sept 2018 - Aug 31, 2026 (1 year as Upwork Talent)',
     color: '#c0d736',
     points: switchPoints,
     refs: switchReference,
