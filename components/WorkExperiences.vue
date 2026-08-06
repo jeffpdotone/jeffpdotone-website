@@ -1,23 +1,28 @@
 <template>
   <div class="flex gap-5 flex-col text-xs md:text-base">
-    <Card
+    <UCard
       v-for="item of events"
       :key="item.companyName"
+      variant="subtle"
     >
-      <template #title>
-        <img
-          v-if="item.image"
-          :src="item.image"
-          class="h-10"
-          :alt="item.alt"
-        >
-        {{ item.companyName }}
-        - {{ item.jobTitle }}
+      <template #header>
+        <div class="flex flex-col gap-2">
+          <img
+            v-if="item.image"
+            :src="item.image"
+            class="h-10 w-fit"
+            :alt="item.alt"
+          >
+          <h2 class="text-base font-bold md:text-lg">
+            {{ item.companyName }} - {{ item.jobTitle }}
+          </h2>
+          <p class="text-muted">
+            {{ typeof item.date === 'function' ? item.date() : item.date }}
+          </p>
+        </div>
       </template>
-      <template #subtitle>
-        {{ typeof item.date === 'function' ? item.date() : item.date }}
-      </template>
-      <template #content>
+
+      <div>
         <ul class="list-disc list-inside">
           <li
             v-for="point in item.points"
@@ -43,8 +48,8 @@
             <span>{{ refer.name }}</span> <span class="hidden print:block">{{ refer.link }}</span>
           </a>
         </div>
-      </template>
-    </Card>
+      </div>
+    </UCard>
   </div>
 </template>
 
