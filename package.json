@@ -2,12 +2,12 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
-  "packageManager": "bun@1.3.14",
+  "packageManager": "npm@10.9.0",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
-    "build": "bun install --frozen-lockfile && nuxt build",
+    "build": "npm ci && nuxt cleanup && nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
