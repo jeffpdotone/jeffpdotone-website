@@ -31,7 +31,12 @@
         >View My Work <span aria-hidden="true">↓</span></a><a
           class="button button-secondary"
           href="mailto:hi@jeffp.one"
-        >Contact Me <span aria-hidden="true">↗</span></a>
+        >Contact Me <span aria-hidden="true">↗</span></a><a
+          class="button button-secondary"
+          href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fTgx1xv16Ep1VbVHEcMi1Rf8RKbfw2SqScrKY_uUgv8SB7ZKXouvIvIu-0GMmf2V6NL-JTDcn?gv=true"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Book a Call <span aria-hidden="true">↗</span></a>
       </div><div class="hero-meta">
         <p><span>Core stack</span> Vue · Nuxt · React · TypeScript · Node.js</p><div>
           <a

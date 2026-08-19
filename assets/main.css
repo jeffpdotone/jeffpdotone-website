@@ -7,3 +7,4 @@
 .game-panel{align-items:start}.game-intro .prose-copy{font-size:.93rem;margin-top:28px}.game-project{background:#fff;display:grid;grid-template-columns:minmax(240px,.8fr) 1.2fr;min-height:560px}.game-shot{background:#202724;padding:26px;display:flex;justify-content:center;overflow:hidden}.game-shot img{display:block;width:100%;max-width:330px;height:100%;object-fit:cover;object-position:center;border-radius:8px;box-shadow:0 20px 45px rgba(0,0,0,.22)}.game-details{padding:46px;display:flex;flex-direction:column}.game-details h3{font:600 2rem/1.1 'Manrope',sans-serif;letter-spacing:-.045em;margin:23px 0 18px}.game-details>p,.game-details>div>p{color:#5c6662;line-height:1.65;font-size:.92rem}.game-details .tag-list{margin-top:auto}
 @media(max-width:800px){.game-project{grid-template-columns:1fr}.game-shot{height:560px}}
 @media(max-width:480px){.game-shot{height:480px;padding:18px}.game-details{padding:30px 24px}}
+.contact-actions{display:flex;gap:12px;flex-wrap:wrap}

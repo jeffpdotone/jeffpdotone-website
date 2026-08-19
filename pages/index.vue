@@ -150,10 +150,17 @@
           Especially interested in
         </p><ul class="role-list">
           <li>Senior Software Engineer</li><li>Senior Frontend Engineer</li><li>Full-Stack / Product Engineer</li><li>SaaS &amp; e-commerce</li><li>Platform &amp; integration engineering</li>
-        </ul><a
-          class="button button-primary contact-button"
-          href="mailto:hi@jeffp.one"
-        >Let’s Talk <span aria-hidden="true">↗</span></a>
+        </ul><div class="contact-actions">
+          <a
+            class="button button-primary contact-button"
+            href="mailto:hi@jeffp.one"
+          >Email Me <span aria-hidden="true">↗</span></a><a
+            class="button button-secondary contact-button"
+            href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fTgx1xv16Ep1VbVHEcMi1Rf8RKbfw2SqScrKY_uUgv8SB7ZKXouvIvIu-0GMmf2V6NL-JTDcn?gv=true"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Book a Call <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
     </section>
     <footer class="site-footer">

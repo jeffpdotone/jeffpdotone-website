@@ -18,5 +18,5 @@
 </template>
 
 <script setup lang="ts">
-const groups = [{ number: '01', title: 'Frontend', skills: ['Vue', 'Nuxt', 'React', 'Next.js', 'JavaScript / TypeScript', 'Vite'] }, { number: '02', title: 'Backend & integrations', skills: ['Node.js', 'REST APIs', 'GraphQL', 'NetSuite / SuiteScript', 'MQTT / real-time data'] }, { number: '03', title: 'Cloud & platforms', skills: ['AWS', 'Azure', 'Google Cloud', 'Docker / Linux', 'Shopify / BigCommerce'] }, { number: '04', title: 'Additional', skills: ['Flutter', 'React Native', 'Ionic', 'Python', 'PHP / Laravel', 'Godot'] }]
+const groups = [{ number: '01', title: 'Frontend', skills: ['Vue', 'Nuxt', 'React', 'Next.js', 'JavaScript / TypeScript', 'Vite'] }, { number: '02', title: 'Backend & integrations', skills: ['Node.js / Bun', 'REST APIs', 'GraphQL', 'NetSuite / SuiteScript', 'MQTT / real-time data'] }, { number: '03', title: 'Cloud & platforms', skills: ['AWS', 'Azure', 'Google Cloud', 'Docker / Linux', 'Shopify / BigCommerce'] }, { number: '04', title: 'Additional', skills: ['Flutter', 'React Native', 'Ionic', 'Python', 'PHP / Laravel', 'Godot'] }]
 </script>
