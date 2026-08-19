@@ -1,78 +1,46 @@
 <template>
-  <div class="flex justify-between items-center flex-wrap gap-5">
-    <div class="leading-none flex-1 md:w-1/2">
-      <h1>Jefferson Paltera</h1>
-      <h3>E-commerce, NetSuite &amp; Smart Building Engineer</h3>
-    </div>
-
-    <div class="flex flex-col gap-3">
-      <div class="flex gap-2">
-        <box-icon name="envelope" />
+  <header class="hero">
+    <nav
+      class="site-nav"
+      aria-label="Main navigation"
+    >
+      <a
+        class="wordmark"
+        href="#top"
+        aria-label="Jefferson Paltera, home"
+      >JP<span>.</span></a><div class="nav-links">
+        <a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a>
+      </div><a
+        class="nav-contact"
+        href="mailto:hi@jeffp.one"
+      >Contact <span aria-hidden="true">↗</span></a>
+    </nav><div
+      id="top"
+      class="hero-content"
+    >
+      <div class="availability">
+        <span /> Open to new opportunities
+      </div><p class="eyebrow">
+        Jefferson Paltera · Senior Software Engineer
+      </p><h1>I build software<br><em>made to matter.</em></h1><p class="hero-copy">
+        Production web applications, SaaS products, integrations, and interactive experiences—built with 10+ years of full-stack and product engineering experience.
+      </p><div class="hero-actions">
         <a
+          class="button button-primary"
+          href="#work"
+        >View My Work <span aria-hidden="true">↓</span></a><a
+          class="button button-secondary"
           href="mailto:hi@jeffp.one"
-          class="hover:underline"
-        >hi@jeffp.one</a>
-      </div>
-      <!-- <div class="flex gap-2">
-                <box-icon name="phone"></box-icon>
-                <a href="tel:+639171178024" class="hover:underline"
-                    >(+63) 917-117-8024</a
-                >
-            </div> -->
-      <div class="flex gap-2">
-        <box-icon
-          name="github"
-          type="logo"
-        />
-        <a
-          href="https://github.com/jeffpdotone"
-          class="hover:underline"
-          style="overflow-wrap: anywhere;"
-        >https://github.com/jeffpdotone</a>
-      </div>
-
-      <div class="print:hidden">
-        <ClientOnly>
-          <div ref="aptBtn" />
-        </ClientOnly>
-      </div>
-      <div class="hidden gap-2 print:flex">
-        <box-icon name="globe" />
-        <a href="https://jeffp.one">jeffp.one</a>
+        >Contact Me <span aria-hidden="true">↗</span></a>
+      </div><div class="hero-meta">
+        <p><span>Core stack</span> Vue · Nuxt · React · TypeScript · Node.js</p><div>
+          <a
+            href="https://github.com/jeffpdotone"
+            target="_blank"
+            rel="noopener noreferrer"
+          >GitHub ↗</a><a href="mailto:hi@jeffp.one">Email ↗</a>
+        </div>
       </div>
     </div>
-  </div>
+  </header>
 </template>
-
-<script setup lang="ts">
-const aptBtn = ref()
-
-useHead({
-  link: [
-    {
-      rel: 'stylesheet',
-      href: 'https://calendar.google.com/calendar/scheduling-button-script.css',
-    },
-  ],
-  script: [
-    {
-      src: 'https://calendar.google.com/calendar/scheduling-button-script.js',
-      async: true,
-      onload: () => {
-        const unwatch = watch(aptBtn, (val) => {
-          window.calendar.schedulingButton.load({
-            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1fTgx1xv16Ep1VbVHEcMi1Rf8RKbfw2SqScrKY_uUgv8SB7ZKXouvIvIu-0GMmf2V6NL-JTDcn?gv=true',
-            color: '#039BE5',
-            label: 'Hire or Say Hi!',
-            target: val,
-          })
-
-          nextTick(() => {
-            unwatch()
-          })
-        }, { immediate: true })
-      },
-    },
-  ],
-})
-</script>

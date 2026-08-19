@@ -1,5 +1,1 @@
-// add typing to window
-
-interface Window {
-  calendar: any
-}
+// Project-wide ambient types can be declared here.

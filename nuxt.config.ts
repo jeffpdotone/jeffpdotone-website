@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   modules: ['@nuxt/ui', '@nuxt/eslint', 'nuxt-vuefire'],
   ssr: false,
-  compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   css: ['~/assets/main.css'],
   vue: {
@@ -10,6 +9,7 @@ export default defineNuxtConfig({
       isCustomElement: tag => tag.includes('box-icon'),
     },
   },
+  compatibilityDate: '2024-04-03',
   eslint: {
     config: {
       stylistic: true,
